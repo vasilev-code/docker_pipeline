@@ -7,7 +7,7 @@ RUN mkdir django_project
 RUN cd django_project
 RUN django-admin startproject mysite
 RUN cd mysite
-RUN python manage.py runserver
-EXPOSE 5000
+#RUN python manage.py runserver
+#EXPOSE 5000
 #RUN python manage.py runserver
 #EXPOSE 5000
