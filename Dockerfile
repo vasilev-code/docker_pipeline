@@ -6,7 +6,7 @@ RUN pip3 install Django
 RUN mkdir django_project 
 WORKDIR django_project
 RUN django-admin startproject mysite
-WORKDIR django_project/mysite
+WORKDIR mysite
 RUN python manage.py runserver
 EXPOSE 5000
 
