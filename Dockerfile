@@ -7,5 +7,3 @@ RUN mkdir django_project
 WORKDIR django_project
 RUN django-admin startproject mysite
 WORKDIR mysite
-CMD ["manage.py", "runserver", "0.0.0.0:8000"]
-
