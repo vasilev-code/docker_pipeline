@@ -6,8 +6,7 @@ stages {
    	 	steps {
    		 	script {
    			 	app = docker.build("my/pipeline:{env.BUILD_ID}")
-   		  	}
-   						 	 
+   		  	}   						 	 
    	 	}
     	}
    	 }    
