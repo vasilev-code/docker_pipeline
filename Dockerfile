@@ -7,6 +7,6 @@ RUN mkdir django_project
 WORKDIR django_project
 RUN django-admin startproject mysite
 WORKDIR mysite
-RUN python manage.py runserver 0.0.0.0:8000 --noreload
+CMD ["manage.py", "runserver", "0.0.0.0:8000"]
 EXPOSE 5000
 
