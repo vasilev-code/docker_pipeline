@@ -1,5 +1,7 @@
-FROM python:3.7
+FROM python:3.10
 RUN mkdir app
-RUN pip install psycopg2
+RUN python -m pip install Django
+RUN django-admin startproject mysite
+RUN python manage.py runserver
 WORKDIR app/
 EXPOSE 5000
