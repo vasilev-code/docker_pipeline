@@ -1,7 +1,7 @@
-FROM python:3.10
+FROM python:3.10-alpine
 RUN mkdir app
+RUN cd app
 RUN python -m pip install Django
 RUN django-admin startproject mysite
-RUN python manage.py runserver
-WORKDIR app/
-EXPOSE 5000
+#RUN python manage.py runserver
+#EXPOSE 5000
