@@ -7,3 +7,4 @@ RUN mkdir django_project
 WORKDIR django_project
 RUN django-admin startproject mysite
 WORKDIR mysite
+EXPOSE 5000
