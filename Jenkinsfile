@@ -5,7 +5,7 @@ stages {
     	stage('Build image') {
    	 	steps {
    		 	script {
-   			 	app = docker.build("python:3.7")
+   			 	app = docker.build("alpine:3.14")
    		  	}   						 	 
    	 	}
     	}
